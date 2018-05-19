@@ -5,5 +5,5 @@ from django.shortcuts import render
 def welcome(request):
     return render(request,'index.html')
 
-def ceshi(request):
-    return render(request,'ceshi.html')
+def speaker(request):
+    return render(request,'speaker.html')

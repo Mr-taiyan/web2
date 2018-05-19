@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     url(r'^$',views.welcome),
-    url(r'^ceshi/$',views.ceshi)
+    url(r'^speaker/$',views.speaker)
 ]
