@@ -35,16 +35,27 @@
 }
 
 .banner-img{
+    position: relative;
     width: 1024px;
     height: 250px;
     margin: 0 auto;
+
     /*background: darkred;*/
 }
 
-.banner-img img{
+.banner-img>img{
     width: 100%;
     height: 100%;
     /*opacity: 0.8;*/
+}
+
+.logo{
+    /*background: lawngreen;*/
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -157px;
+    margin-top: -56px;
 }
 
 .navigator{
