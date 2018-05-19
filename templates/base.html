@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}Welcome</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    {% block head %}
+
+    {% endblock head %}
+</head>
+<body>
+<div class="ban-top">
+    <div class="ban-top-content">
+        Medical Conference
+    </div>
+</div>
+
+<div class="banner">
+    <div class="banner-img">
+        <img src="/static/images/picture.png" />
+    </div>
+    <div class="navigator">
+        <ul>
+            <li><a href="#">Home</a>
+                <ul class="navigator-sub">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Programme</a></li>
+            <li><a href="#">Accommodation</a></li>
+            <li><a href="#">Registration</a></li>
+        </ul>
+    </div>
+</div>
+
+{% block body %}
+
+{% endblock body %}
+
+<div class="cashe"></div>
+<div class="constant">
+    <div class="info">
+        <div class="info-content">
+
+            <h1>CONTACT US</h1>
+            <hr/>
+            <p>
+                Contact Unit: xxxxxx<br/>
+                Contact Persons: Ms. xxxx<br/>
+                Telephone: (0756) 1234567<br/>
+                Email: xxxxx@gmail.com<br/>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            Copyright © 2018 Falesim Ltd. All rights reserved.
+        </div>
+    </div>
+</div>
+</body>
+</html>

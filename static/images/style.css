@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/******************************************/
+/******************************************/
+/******************************************/
+/**           banner                         ****/
+/******************************************/
+/******************************************/
+/******************************************/
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #08314d;
+}
+.banner-img1{
+    position: absolute;
+    left:250px;
+    width: 385px;
+    height: 72px;
+
+}
+.banner-img{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    /* background: white; */
+}
+
+.banner-img img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.navigator{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 80px;
+    background: #08314d;
+    z-index: 999;
+}
+
+.navigator ul {
+    background: #08314d;
+    list-style-type: none;
+    height: 100%;
+}
+
+.navigator > ul{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigator ul li{
+    position: relative;
+    background: #08314d;
+    width: 120px;
+    height: 60px;
+}
+
+.navigator > ul > li{
+
+    margin: 0 10px;
+}
+
+.navigator ul li a{
+    background: goldenrod;
+    text-decoration:none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigator > ul > li > ul{
+    display: none;
+    position: absolute;
+}
+
+.navigator li a:hover{background: gold}
+.navigator li:hover ul.navigator-sub{display: block}
+
+
+
+
+/******************************************/
+/******************************************/
+/******************************************/
+/**           content                        ****/
+/******************************************/
+/******************************************/
+/******************************************/
+
+
+.content{
+    background: deepskyblue;
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.content-main{
+    background: yellowgreen;
+    width: 700px;
+    height: 100%;
+}
+
+/******************************************/
+/******************************************/
+/******************************************/
+/**           info                        ****/
+/******************************************/
+/******************************************/
+/******************************************/
+
+
+.info{
+    background: #245a7c;
+    width: 100%;
+    height: 400px;
+}
+
+.info-content{
+    background: powderblue;
+    width:1000px;
+    height:100%;
+    margin:0 auto;
+}
+
+
+/******************************************/
+/******************************************/
+/******************************************/
+/**           footer                        ****/
+/******************************************/
+/******************************************/
+/******************************************/
+
+.footer{
+    background: #08314d;
+    width:100%;
+    height:80px;
+}

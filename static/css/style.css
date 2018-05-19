@@ -1,0 +1,263 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+/******************************************/
+/******************************************/
+/******************************************/
+/**           banner                         ****/
+/******************************************/
+/******************************************/
+/******************************************/
+
+.ban-top{
+    width:100%;
+    /*height:50px;*/
+    background: #034b9d;
+    /*margin-bottom: 20px;*/
+}
+
+.ban-top-content{
+
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    /*height:260px;*/
+    /*height: 400px;*/
+    background: white;
+}
+
+.banner-img{
+    width: 1024px;
+    height: 250px;
+    margin: 0 auto;
+    /*background: darkred;*/
+}
+
+.banner-img img{
+    width: 100%;
+    height: 100%;
+    /*opacity: 0.8;*/
+}
+
+.navigator{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    /*height: 35px;*/
+    /*background: black;*/
+    z-index: 999;
+}
+
+.navigator ul {
+    background: white;
+    list-style-type: none;
+}
+
+.navigator>ul{
+
+    /*height:100%;*/
+}
+
+.navigator > ul{
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigator ul li{
+    position: relative;
+    /*background: darkseagreen;*/
+    /*width: 120px;*/
+    line-height:35px;
+
+    /*height: 60px;*/
+}
+
+.navigator > ul > li{
+
+    margin: 0 10px;
+}
+
+.navigator ul li a{
+    /*background: goldenrod;*/
+    text-decoration:none;
+    color: black;
+    display: block;
+    height: 100%;
+    text-align: center;
+    padding: 0 15px;
+
+}
+
+.navigator > ul > li > ul{
+    display: none;
+    position: absolute;
+    /*background: goldenrod;*/
+}
+
+.navigator ul li a:hover{
+    /*background: black;*/
+    /*color: blue;*/
+    text-decoration: underline;
+
+}
+
+/*.navigator>ul>li>ul>li:hover>a{*/
+    /*background:dodgerblue;*/
+    /*color:white;*/
+/*}*/
+.navigator li:hover ul.navigator-sub{display: block}
+
+
+
+
+/******************************************/
+/******************************************/
+/******************************************/
+/**           content                        ****/
+/******************************************/
+/******************************************/
+/******************************************/
+
+.container{
+    width: 100%;
+    background: white;
+}
+
+.content{
+    background: white;
+    position: relative;
+    width: 1100px;
+    /*height: 1000px;*/
+    margin: 0 auto;
+}
+
+.content-main{
+    /*background: yellowgreen;*/
+    width: 700px;
+    height: 100%;
+}
+
+.content-item{
+    /*background: cadetblue;*/
+    padding: 20px 20px;
+}
+
+.content-item h1{
+    line-height:60px;
+    font-size: 26px;
+}
+
+.content-item p{
+    line-height:30px;
+    margin-top: 20px;
+}
+
+.advertisment{
+    position: absolute;
+
+    right: 0;
+    top: 0;
+    width:300px;
+    height:100%;
+    /*background: orangered;*/
+    border-left: 2px solid grey;
+}
+
+.advertisment .example{
+    width:250px;
+    height: 250px;
+    margin: 50px auto;
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cashe{
+    width:100%;
+    height: 380px;
+}
+
+/******************************************/
+/******************************************/
+/******************************************/
+/**           info                        ****/
+/******************************************/
+/******************************************/
+/******************************************/
+
+
+.constant{
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    left:0;
+    z-index:-999;
+}
+
+
+.info{
+    background: #034b9d;
+    width: 100%;
+    height: 350px;
+    color: white;
+}
+
+.info-content{
+    /*background: powderblue;*/
+    width:1000px;
+    height:100%;
+    margin:0 auto;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.info-content h1{
+    font-size: 40px;
+}
+
+.info-content p{
+    padding-top:50px;
+    font-size: 25px;
+    line-height:40px;
+}
+
+
+/******************************************/
+/******************************************/
+/******************************************/
+/**           footer                        ****/
+/******************************************/
+/******************************************/
+/******************************************/
+
+
+.footer{
+    background: #043e7c;
+    width:100%;
+    /*height:80px;*/
+}
+
+.footer-content{
+    /*background: lavender;*/
+    width: 1000px;
+    line-height:50px;
+    margin:0 auto;
+    font-size: 18px;
+    color: grey;
+}
+
+
+
+
+
+
+
