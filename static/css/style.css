@@ -202,14 +202,14 @@ h1,h2{
     width:300px;
     /*height:100%;*/
     /*background: orangered;*/
-    border-left: 2px solid grey;
+    border-left: 2px solid #a1a1a1;
 }
 
 .advertisment .example{
     width:250px;
     height: 250px;
     margin: 50px auto;
-    background: grey;
+    background: #a1a1a1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -222,7 +222,7 @@ h1,h2{
 
 
 .small-item{
-    background: cornflowerblue;
+    background: #82cff4;
     opacity: 0.8;
     display: flex;
     margin-bottom: 25px;
@@ -241,13 +241,13 @@ h1,h2{
 .introduction>p{
     line-height: 20px;
     font-size: 14px;
-    padding: 0px 15px;
+    padding: 0 15px;
 }
 
 .profile{
     width: 150px;
     height: 150px;
-    background: grey;
+    background: #a1a1a1;
 }
 /******************************************/
 /******************************************/
@@ -315,7 +315,7 @@ h1,h2{
     line-height:50px;
     margin:0 auto;
     font-size: 18px;
-    color: grey;
+    color: #a1a1a1;
 }
 
 
