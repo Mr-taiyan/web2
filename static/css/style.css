@@ -6,7 +6,7 @@
 }
 
 h1,h2{
-    /*font-family: "Arial Black";*/
+    font-family: "Arial Black";
 }
 
 /******************************************/
@@ -182,7 +182,7 @@ h1,h2{
 
 .content-item>h1{
     line-height:60px;
-    font-size: 26px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 
