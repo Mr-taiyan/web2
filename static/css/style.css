@@ -26,7 +26,8 @@ h1,h2{
 }
 
 .ban-top-content{
-    width: 1000px;
+    /*background: lemonchiffon;*/
+    width: 950px;
     margin:0 auto;
     color: white;
 
@@ -40,7 +41,7 @@ h1,h2{
 
 .banner-img{
     position: relative;
-    width: 1024px;
+    width: 980px;
     height: 250px;
     margin: 0 auto;
 
@@ -165,7 +166,7 @@ h1,h2{
 .content{
     /*background: green;*/
     position: relative;
-    width: 1000px;
+    width: 980px;
     margin: 0 auto;
 }
 
@@ -202,7 +203,7 @@ h1,h2{
 
     right: 0;
     top: 0;
-    width: 300px;
+    width: 280px;
     /*height:100%;*/
     /*background: orangered;*/
 }
