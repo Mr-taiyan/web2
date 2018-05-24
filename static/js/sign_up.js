@@ -34,15 +34,24 @@ $(function () {
 
 		if(re.test($('#email').val()))
 		{
-			$('#email').next().hide();
-			error_email = false;
-		}
-		else
-		{
+			$.get('/sign_up_exist/?email='+$('#email').val(),function (data) {
+				// alert(data.count);
+				if(data.count>=1){
+					$('#email').next().html('this email has been registered');
+					$('#email').next().show();
+					error_email = true;
+				}else{
+					$('#email').next().hide();
+					error_email = false;
+				}
+            })
+
+		}else{
 			$('#email').next().html('你输入的邮箱格式不正确');
 			$('#email').next().show();
 			error_email = true;
 		}
+
 
 	}
 

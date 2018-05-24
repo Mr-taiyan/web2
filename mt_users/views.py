@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect,render_to_response
+from django.http import JsonResponse
 from models import *
 
 # Create your views here.
@@ -38,3 +39,8 @@ def handle_sign_up(request):
 
     context = {'message':'success'}
     return render(request,"sign_in.html",context)
+
+def sign_up_exist(request):
+    email = request.GET.get('email')
+    count = User_info.objects.filter(email=email).count()
+    return JsonResponse({'count':count})
