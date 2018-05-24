@@ -22,7 +22,6 @@ $(function () {
 
 	$('form[name=form]').submit(function (e) {
 		if(error_name == false && error_pwd == false && error_check_pwd == false && error_email == false){
-		    alert('success');
 			return true;
 		}else{
             alert('fail');

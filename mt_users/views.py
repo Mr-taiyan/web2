@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,render_to_response
 from models import *
 
 # Create your views here.
@@ -26,7 +26,8 @@ def handle_sign_up(request):
     name = post.get("name")
 
     if(pwd != cpwd):
-        return redirect('/sign_up/')
+        context = {'message':'fail'}
+        return render(request,'sign_up.html',context)
 
     user = User_info()
     user.email = email
@@ -35,4 +36,5 @@ def handle_sign_up(request):
 
     user.save()
 
-    return redirect("/sign_in/")
+    context = {'message':'success'}
+    return render(request,"sign_in.html",context)
