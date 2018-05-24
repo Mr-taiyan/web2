@@ -7,3 +7,9 @@ def welcome(request):
 
 def speaker(request):
     return render(request,'speaker.html')
+
+def introduction(request):
+    return render(request,'introduction.html')
+
+def sign_in(request):
+    return render(request,'sign_in.html')
