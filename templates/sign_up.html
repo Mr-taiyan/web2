@@ -1,9 +1,41 @@
 {% extends "base.html" %}
 
 {% block head %}
+    <script type="text/javascript" src="/static/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/static/js/sign_up.js"></script>
+    <script>
+        
+    </script>
 
 {% endblock head %}
 
 {% block body %}
+    <a href="/sign_in/">go to login</a>
+    <form name='form' action="/handle_sign_up/" method="post">
+    {% csrf_token %}
+        <ul>
+            <li>
+                <label>email address</label>
+                <input name="email" type="text" id="email">
+                <span class="error_tip">error</span>
+            </li>
+            <li>
+                <label>password</label>
+                <input name="pwd" type="password" id="pwd">
+                <span class="error_tip">error</span>
+            </li>
+            <li>
+                <label>confirm password</label>
+                <input name="cpwd" type="password" id="cpwd">
+                <span class="error_tip">error</span>
+            </li>
+            <li>
+                <label>name</label>
+                <input name="name" type="text" id="name">
+                <span class="error_tip">error</span>
+            </li>
+        </ul>
+        <input type="submit" value="Register" name="submit">
+    </form>
 
 {% endblock body %}

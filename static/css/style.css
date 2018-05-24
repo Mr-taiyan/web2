@@ -26,11 +26,17 @@ h1,h2{
     }
 
     .ban-top-content {
-        /*background: lemonchiffon;*/
+        background: lemonchiffon;
         width: 950px;
         margin: 0 auto;
         color: white;
 
+    }
+
+    .ban-top-content span{
+        float: right;
+        margin-right: 10px;
+        background: yellowgreen;
     }
 
     .banner {
