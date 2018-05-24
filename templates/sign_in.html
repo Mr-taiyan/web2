@@ -7,6 +7,12 @@
         if('{{ message }}'){
             alert('{{ message }}');
         }
+
+        if({{ check }} == '1'){
+            $('#pwd').next().html('incorrect email or password')
+            $('#pwd').next().show()
+        }
+
     })
     </script>
 
@@ -14,19 +20,20 @@
 
 {% block body %}
     <a href="/sign_up/">create a new account</a>
-    <from action="" method="post">
+    <form action="/handle_sign_in/" method="post">
     {% csrf_token %}
         <ul>
             <li>
                 <label>email address</label>
-                <input type="text" name="email" id="email">
+                <input type="text" name="email" value='{{ email }}' id="email">
             </li>
             <li>
                 <label>password</label>
                 <input type="password" name="pwd" id="pwd">
+                <span class="error_tip">error</span>
             </li>
         </ul>
         <input type="submit" value="Login" name="submit"/>
 
-    </from>
+    </form>
 {% endblock body %}
