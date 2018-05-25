@@ -12,7 +12,12 @@
 <div class="ban-top">
     <div class="ban-top-content">
         2018 Zhuhai International Symposium on Molecular Imaging
+        {% if not request.session.id %}
         <span><a href="/sign_in/">login</a></span>
+        {% endif %}
+        {% if request.session.id %}
+        <span><a href="/log_out/">log out</a></span>
+        {% endif %}
     </div>
 </div>
 
@@ -31,7 +36,12 @@
             <li><a href="/speaker/">Speakers</a></li>
             <li><a href="#">Programme</a></li>
             <li><a href="/introduction/">Introduction</a></li>
+            {% if not request.session.id %}
             <li><a href="#">Registration</a></li>
+            {% endif %}
+            {% if request.session.id %}
+            <li><a href="#">Member</a></li>
+            {% endif %}
         </ul>
     </div>
 </div>

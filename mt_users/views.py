@@ -59,8 +59,14 @@ def handle_sign_in(request):
     elif(pwd != user[0].pwd):
         return error
     else:
+        request.session['id'] = user[0].id
         return redirect('/user/')
 
 
 def user(request):
-    return render(request,'user.html')
+    name = User_info.objects.get(id=request.session['id']).name
+    return render(request,'user.html',context={'name':name})
+
+def log_out(request):
+    del request.session['id']
+    return redirect('/')
