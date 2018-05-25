@@ -26,6 +26,10 @@ def handle_sign_up(request):
     cpwd = post.get("cpwd")
     name = post.get("name")
 
+    if(email == ''):
+        context = {'message':'fail'}
+        return render(request,'sign_up.html',context)
+
     if(pwd != cpwd):
         context = {'message':'fail'}
         return render(request,'sign_up.html',context)

@@ -21,6 +21,11 @@ $(function () {
     });
 
 	$('form[name=form]').submit(function (e) {
+		check_email();
+		check_pwd();
+		check_cpwd();
+		check_name();
+
 		if(error_name == false && error_pwd == false && error_check_pwd == false && error_email == false){
 			return true;
 		}else{
@@ -94,9 +99,11 @@ $(function () {
 		if(len==0){
 			$('#name').next().html('please input your name');
 			$('#name').next().show();
+			error_name = true;
 		}else if(len>30){
 			$('#name').next().html('your name is too long');
 			$('#name').next().show();
+			error_name = true;
 		}else {
 			$('#name').next().hide();
 			error_name = false;
