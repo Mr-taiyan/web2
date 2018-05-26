@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect,render_to_response
 from django.http import JsonResponse
 from models import *
+from django.core.mail import send_mail
 
 # Create your views here.
 
@@ -82,7 +83,12 @@ def ceshi(request):
     id = request.session['id']
     user = User_info.objects.get(id=id)
     user.paid = True
+    email = user.email
+    # email = 'dennyxineng@gmail.com'
 
     user.save()
+
+    send_mail('success', 'successful', 'cty9388@163.com',
+              [email], fail_silently=False)
 
     return redirect('/user/')

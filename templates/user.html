@@ -9,7 +9,7 @@
     {% if not paid %}
         <form action="/ceshi/" method="post">
         {% csrf_token %}
-        <input type="submit">
+        <input type="submit" value="click here to pay">
         </form>
     {% endif %}
 
