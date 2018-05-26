@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0785233f-9653-4a56-8813-77436b7814a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt_users/admin.py" afterPath="$PROJECT_DIR$/mt_users/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt_users/models.py" afterPath="$PROJECT_DIR$/mt_users/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt_users/urls.py" afterPath="$PROJECT_DIR$/mt_users/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt_users/views.py" afterPath="$PROJECT_DIR$/mt_users/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/user.html" afterPath="$PROJECT_DIR$/templates/user.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2/settings.py" afterPath="$PROJECT_DIR$/web2/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +19,21 @@
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+            <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/static/css/style.css">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="172">
                     <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/web2/settings.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="408">
+                    <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
                     <folding />
                   </state>
                 </provider>
@@ -43,7 +47,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mt_users/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -65,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mt_users/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
@@ -131,12 +135,12 @@
         <option value="$PROJECT_DIR$/templates/sign_in.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/static/js/sign_up.js" />
-        <option value="$PROJECT_DIR$/web2/settings.py" />
         <option value="$PROJECT_DIR$/mt_users/admin.py" />
         <option value="$PROJECT_DIR$/mt_users/models.py" />
         <option value="$PROJECT_DIR$/mt_users/urls.py" />
         <option value="$PROJECT_DIR$/mt_users/views.py" />
         <option value="$PROJECT_DIR$/templates/user.html" />
+        <option value="$PROJECT_DIR$/web2/settings.py" />
       </list>
     </option>
   </component>
@@ -863,24 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web2/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="100" column="1" lean-forward="true" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mt_users/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mt_users/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -897,6 +883,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mt_users/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -907,10 +901,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/mt_users/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
           <folding />
         </state>
       </provider>
