@@ -68,9 +68,21 @@ def handle_sign_in(request):
 
 
 def user(request):
-    name = User_info.objects.get(id=request.session['id']).name
-    return render(request,'user.html',context={'name':name})
+    user = User_info.objects.get(id=request.session['id'])
+    name = user.name
+    paid = user.paid
+    return render(request,'user.html',context={'name':name,'paid':paid})
 
 def log_out(request):
     del request.session['id']
     return redirect('/')
+
+
+def ceshi(request):
+    id = request.session['id']
+    user = User_info.objects.get(id=id)
+    user.paid = True
+
+    user.save()
+
+    return redirect('/user/')

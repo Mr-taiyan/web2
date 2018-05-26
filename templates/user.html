@@ -5,6 +5,16 @@
 {% endblock head %}
 
 {% block body %}
-    {{ name }} welcome!
+    {{ name }} welcome!<br/>
+    {% if not paid %}
+        <form action="/ceshi/" method="post">
+        {% csrf_token %}
+        <input type="submit">
+        </form>
+    {% endif %}
+
+    {% if paid %}
+        you have paid.
+    {% endif %}
 
 {% endblock body %}
