@@ -125,9 +125,10 @@ STATICFILES_DIRS = [
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = False   #是否使用TLS安全传输协议
-EMAIL_USE_SSL = True    #是否使用SSL加密，qq企业邮箱要求使用
-EMAIL_HOST = 'smtp.exmail.qq.com'   #发送邮件的邮箱 的 SMTP服务器，这里用了qq企业邮箱
-EMAIL_PORT = 465     #发件箱的SMTP服务器端口
-EMAIL_HOST_USER = 'charleschen@xmdaren.com'    #发送邮件的邮箱地址
-EMAIL_HOST_PASSWORD = '*********'         #发送邮件的邮箱密码
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'cty9388@163.com'
+EMAIL_HOST_PASSWORD = 'qwe123'
+DEFAULT_FROM_EMAIL =EMAIL_HOST_USER
